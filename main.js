@@ -5,7 +5,7 @@ const progressBar = player.querySelector('.progress_filled');
 const toggle = player.querySelector('.toggle');
 const skipButtons = player.querySelectorAll('[data-skip');
 const ranges = player.querySelectorAll('.player_slider');
-
+progressBar.style.flexBasis = 0;
 function togglePlay() {
   const method = video.paused ? 'play' : 'pause';
   video[method]();
